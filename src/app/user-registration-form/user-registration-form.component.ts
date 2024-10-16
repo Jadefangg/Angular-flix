@@ -11,8 +11,9 @@ import { FetchApiDataService } from '../fetch-api-data.service';
 import { MatSnackBar } from '@angular/material/snack-bar';
 
 
-@Component({
-  selector: 'app-user-registration-form',
+@Component({//Because of the selector the form component can be used in this HTML file and elsewhere, as follows:
+//<app-user-registration-form>...</app-user-registration-form>
+  selector: 'app-user-registration-form', //this allows the component to be called in the html file and other components
   templateUrl: './user-registration-form.component.html',
   styleUrls: ['./user-registration-form.component.scss']
 })
