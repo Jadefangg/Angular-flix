@@ -15,11 +15,11 @@ import { MatSnackBar } from '@angular/material/snack-bar';
 //<app-user-registration-form>...</app-user-registration-form>
   selector: 'app-user-registration-form', //this allows the component to be called in the html file and other components
   templateUrl: './user-registration-form.component.html',
-  styleUrls: ['./user-registration-form.component.scss']
+  styleUrls: ['./user-registration-form.component.scss'] 
 })
-export class UserRegistrationFormComponent implements OnInit {
+export class UserRegistrationFormComponent implements OnInit { //This class will hold the data the user inputs in the form
 
-  @Input() userData = { Username: '', Password: '', Email: '', Birthday: '' };
+  @Input() userData = { Username: '', Password: '', Email: '', Birthday: '' };//decorators that allow data to be passed into the component from the parent module
 
 constructor(
     public fetchApiData: FetchApiDataService,
