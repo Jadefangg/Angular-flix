@@ -6,9 +6,9 @@ import { throwError, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class FetchApiDataService {
+export class FetchApiDataService { // Inject HttpClient module to the constructor params. This class will provide the methods to make API calls to the server
   // Replace 'your_api_url' with the actual URL of your API
-  apiUrl = 'https://your_api_url_here';
+  apiUrl = 'https://your_api_url_here'; //PLACEHOLDER
 
   constructor(private http: HttpClient) {}
 
