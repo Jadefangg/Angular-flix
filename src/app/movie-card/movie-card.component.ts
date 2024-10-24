@@ -13,6 +13,7 @@ export class MovieCardComponent {
   constructor(public fetchApiData: FetchApiDataService) { }//This is the constructor that allows the component to use the fetchApiData service.
 //the constructor is called before the ngonit hook because it is a lifecycle hook. It is called before the component is initialized.
 
+//If this hook is not used [which you can do also!], then the getMoies function has to be called directly in the constructor.
 ngOnInit(): void { //this only runs after the component is initialized. It calls the getMovies method.
   this.getMovies();//the purpose of this hook is to allow the constructor to finish before the component is initialized.
 }
