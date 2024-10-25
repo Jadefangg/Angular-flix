@@ -13,8 +13,10 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
 import { UserProfileComponent } from './app/user-profile/user-profile.component';
+import { UserLoginFormComponent } from './app/user-login-form/user-login-form.component';
 
 const appRoutes: Routes = [
+  {path: 'user-login', component: UserLoginFormComponent},
   { path: 'user-profile', component: UserProfileComponent },
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
