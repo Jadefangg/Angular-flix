@@ -1,5 +1,5 @@
 import { ComponentFixture, TestBed } from '@angular/core/testing';
-
+import { MatIconModule } from '@angular/material/icon';
 import { MovieCardComponent } from './movie-card.component';
 
 describe('MovieCardComponent', () => {
