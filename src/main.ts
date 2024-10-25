@@ -12,8 +12,10 @@ import { MatDialogModule } from '@angular/material/dialog';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
 import { FormsModule } from '@angular/forms';
 import {MatIconModule} from '@angular/material/icon';
+import { UserProfileComponent } from './app/user-profile/user-profile.component';
 
 const appRoutes: Routes = [
+  { path: 'user-profile', component: UserProfileComponent },
   { path: 'welcome', component: WelcomePageComponent },
   { path: 'movies', component: MovieCardComponent },
   { path: '', redirectTo: 'welcome', pathMatch: 'prefix' },
@@ -29,7 +31,8 @@ bootstrapApplication(AppComponent, {
       MatFormFieldModule,
       MatDialogModule,
       MatSnackBarModule,
-      FormsModule
+      FormsModule,
+      MatIconModule
     )
   ]
 }).catch(err => console.error(err));
