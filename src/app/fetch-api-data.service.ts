@@ -8,7 +8,18 @@ import { throwError, Observable } from 'rxjs';
 })
 export class FetchApiDataService {                                 // Inject HttpClient module to the constructor params. This class will provide the methods to make API calls to the server
                                                                    // Replace 'your_api_url' with the actual URL of your API
-  apiUrl = 'https://movies-myflix-api-84dbf8740f2d.herokuapp.com'; //PLACEHOLDER
+/**
+   * Base URL for the API.
+   * Replace 'your_api_url' with the actual URL of your API.
+   */
+
+                                                                   
+  apiUrl = 'https://movies-myflix-api-84dbf8740f2d.herokuapp.com'; 
+   /**
+   * Injects HttpClient module to the constructor params.
+   * 
+   * @param http - The HttpClient instance to make HTTP requests.
+   */
 
   constructor(private http: HttpClient) {}
 
