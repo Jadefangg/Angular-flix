@@ -20,6 +20,9 @@ export class FetchApiDataService { // Inject HttpClient module to the constructo
   }
 
   // User login
+  // @param userDetails - Object containing user details for login
+  // @returns Observable<any> - Observable containing the server response
+   
   public userLogin(userDetails: any): Observable<any> {
     return this.http
       .post(`${this.apiUrl}/login`, userDetails)
