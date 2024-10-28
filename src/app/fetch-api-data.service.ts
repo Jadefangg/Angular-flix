@@ -19,9 +19,11 @@ export class FetchApiDataService {                                 // Inject Htt
       .pipe(catchError(this.handleError));
   }
 
-  // User login
-  // @param userDetails - Object containing user details for login
-  // @returns Observable<any> - Observable containing the server response
+  /**
+     User login
+  * @param userDetails - Object containing user details for login
+  * @returns Observable<any> - Observable containing the server response
+  */
    
   public userLogin(userDetails: any): Observable<any> {
     return this.http
