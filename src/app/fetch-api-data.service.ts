@@ -6,8 +6,8 @@ import { throwError, Observable } from 'rxjs';
 @Injectable({
   providedIn: 'root',
 })
-export class FetchApiDataService { // Inject HttpClient module to the constructor params. This class will provide the methods to make API calls to the server
-  // Replace 'your_api_url' with the actual URL of your API
+export class FetchApiDataService {                                 // Inject HttpClient module to the constructor params. This class will provide the methods to make API calls to the server
+                                                                   // Replace 'your_api_url' with the actual URL of your API
   apiUrl = 'https://movies-myflix-api-84dbf8740f2d.herokuapp.com'; //PLACEHOLDER
 
   constructor(private http: HttpClient) {}
