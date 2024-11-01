@@ -22,7 +22,13 @@ export class UserProfileComponent implements OnInit {
   }
 
   updateUser(): void {
-    this.fetchApiData.editUser(this.userData).subscribe((res: any) => {
+    const username = this.userData.username;
+    const userDetails = {
+      email: this.userData.email,
+      password: this.userData.password,
+      // Add other user details as needed
+    };
+    this.fetchApiData.editUser(username,userDetails).subscribe((res: any) => {
       this.userData = {
         ...res,
         id: res._id,
@@ -53,7 +59,7 @@ export class UserProfileComponent implements OnInit {
   }
 
   getUser(): void {
-    this.fetchApiData.getUserByID(this.userData.id).subscribe((res: any) => {
+    this.fetchApiData.getUser(this.userData.id).subscribe((res: any) => {
       this.userData = {
         ...res,
         id: res._id,
